@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> 
+</head>
+<body>
+    <header>
+        <h1  >Delicious Recipes</h1>
+    </header>
+    
+    <main>
+        <section class="recipe" data-aos="fade-up">
+            <h2>Russian Salad</h2>
+            <img src="russian-salad.jpg"   alt="Russian Salad">
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>4 potatoes, boiled and diced</li>
+                    <li>2 carrots, boiled and diced</li>
+                    <li>1 cup green peas, boiled</li>
+                    <li>1 cup mayonnaise</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>In a large bowl, combine the potatoes, carrots, and peas.</li>
+                    <li>Add the mayonnaise, salt, and pepper.</li>
+                    <li>Mix well until all ingredients are evenly coated.</li>
+                    <li>Chill in the refrigerator for at least 1 hour before serving.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        });
+    </script>
+</body>
+</html>
